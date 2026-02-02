@@ -87,22 +87,22 @@ namespace Separador_de_archivos
                     }
 
                     File.Move(archivo, destino);
-                    Console.WriteLine($"✅ Movido: {nombreArchivo} → {carpetaDestino}");
+                    Console.WriteLine($" Movido: {nombreArchivo} → {carpetaDestino}");
                     File.AppendAllText(Path.Combine(ruta, "log.txt"), $"Movido: {nombreArchivo} → {carpetaDestino}\n");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"❌ Error al mover {nombreArchivo}: {ex.Message}");
+                    Console.WriteLine($" Error al mover {nombreArchivo}: {ex.Message}");
                 }
             }
-            Console.WriteLine("\n📊 Resumen de archivos movidos:");
+            Console.WriteLine("\n Resumen de archivos movidos:");
             Console.WriteLine($"Word: {countWord}");
             Console.WriteLine($"Excel: {countExcel}");
             Console.WriteLine($"PDF: {countPDF}");
             Console.WriteLine($"Imágenes: {countImagenes}");
             Console.WriteLine($"PowerPoint: {countPPT}");
             Console.WriteLine($"Otros: {countOtros}");
-            Console.WriteLine("\n✅ Organización completada.");
+            Console.WriteLine("\n Organización completada.");
 
 
 
